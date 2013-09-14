@@ -15,13 +15,8 @@ def parse(filename):
                 if len(section):
                     sections.append(section)
                     section = []
-                    #print "%s<--'" % line
-                else:
-                    #print "'-->%s" % line
-                    section.append(line)
-            elif len(section):
-                #print line
-                section.append(line)
+            #print line
+            section.append(line)
     if len(section):
         #print "<--'"
         sections.append(section)
