@@ -1,6 +1,9 @@
 import os.path
 
-indir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'markout')
+base = os.path.abspath(os.path.dirname(__file__))
+
+outdir = os.path.join(base, 'markout')
+indir = os.path.join(base, 'ocrtxt')
 
 
 def parse(filename):
@@ -36,11 +39,11 @@ def cb(arg, dirname, filenames):
 
     for fln in parsed.keys():
         print "[generating] %s" % fln
-        with open("./%s.md" % fln, 'w+') as f2:
+        with open(os.path.join(outdir, "./%s.md" % fln), 'w+') as f2:
             for sections in parsed[fln]:
                 secnum = sections[0].split()[0]
                 f2.write("## [%s](#%s)\n" % (secnum, secnum))
-                f2.writelines(sections)
+                f2.write(" ".join(sections))
                 f2.write("\n")
 
 
