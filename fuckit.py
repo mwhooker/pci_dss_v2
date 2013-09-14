@@ -1,9 +1,20 @@
+import re
 import os.path
 
 base = os.path.abspath(os.path.dirname(__file__))
 
 outdir = os.path.join(base, 'markout')
 indir = os.path.join(base, 'ocrtxt')
+
+
+bullet = re.compile("I ([A-Z].+)")
+
+
+def filter_in(line):
+    b = bullet.match(line)
+    if b:
+        return "\n\n   * %s" % b.groups()[0]
+    return line
 
 
 def parse(filename):
@@ -15,8 +26,7 @@ def parse(filename):
                 if len(section):
                     sections.append(section)
                     section = []
-            #print line
-            section.append(line)
+            section.append(filter_in(line))
     if len(section):
         #print "<--'"
         sections.append(section)
@@ -34,12 +44,13 @@ def cb(arg, dirname, filenames):
         print "[generating] %s" % fname
         for section in sections:
             secnum = section[0].split()[0]
+            print section
             ssect.append((secnum, section))
 
     with open(os.path.join(outdir, 'section.md'), 'w+') as outf:
         for secnum, section in sorted(ssect):
             outf.write("## [%s](#%s)\n" % (secnum, secnum))
             outf.write(" ".join(section))
-            outf.write("\n")
+            outf.write("\n\n")
 
 os.path.walk(indir, cb, None)
