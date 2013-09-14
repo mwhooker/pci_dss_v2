@@ -10,8 +10,8 @@ def parse(filename):
     sections = []
     section = []
     with open(filename) as f:
-        for line in (l.strip() for l in f):
-            if line.lstrip().startswith('6'):
+        for line in (l.strip() for l in f if len(l.strip())):
+            if line.startswith('6'):
                 if len(section):
                     sections.append(section)
                     section = []
