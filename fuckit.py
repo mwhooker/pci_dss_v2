@@ -9,20 +9,17 @@ indir = os.path.join(base, 'ocrtxt')
 def parse(filename):
     sections = []
     section = []
-    parsing = False
     with open(filename) as f:
         for line in (l.strip() for l in f):
             if line.lstrip().startswith('6'):
-                if parsing:
+                if len(section):
                     sections.append(section)
                     section = []
-                    parsing = False
                     #print "%s<--'" % line
                 else:
                     #print "'-->%s" % line
                     section.append(line)
-                    parsing = True
-            elif parsing:
+            elif len(section):
                 #print line
                 section.append(line)
     if len(section):
@@ -37,14 +34,14 @@ def cb(arg, dirname, filenames):
     for f in filenames:
         parsed[f] = parse(os.path.join(dirname, f))
 
-    for fln in parsed.keys():
-        print "[generating] %s" % fln
-        with open(os.path.join(outdir, "./%s.md" % fln), 'w+') as f2:
-            for sections in parsed[fln]:
-                secnum = sections[0].split()[0]
-                f2.write("## [%s](#%s)\n" % (secnum, secnum))
-                f2.write(" ".join(sections))
-                f2.write("\n")
+    with open(os.path.join(outdir, 'section.md'), 'w+') as outf:
+        for fname, sections in parsed.items():
+            print "[generating] %s" % fname
+            for section in sections:
+                secnum = section[0].split()[0]
+                outf.write("## [%s](#%s)\n" % (secnum, secnum))
+                outf.write(" ".join(section))
+                outf.write("\n")
 
 
 os.path.walk(indir, cb, None)
