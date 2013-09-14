@@ -1,0 +1,28 @@
+6.2.a Interview responsible personnel to verify that processes are
+
+implemented to identify new security vulnerabilities, and that a risk
+ranking is assigned to such vulnerabilities. (At minimum, the most
+
+critical, highest risk vulnerabilities should be ranked as —High.||
+
+6.2.b Verify that processes to identify new security vulnerabilities
+include using outside sources for security vulnerability information.
+
+6.3.a Obtain and examine written software development processes
+to verify that the processes are based on industry standards and/or
+best practices.
+
+6.3.b Examine written software development processes to verify
+that information security is included throughout the life cycle.
+
+6.3.c Examine written software development processes to verify
+that software applications are developed in accordance with PCI
+DSS.
+
+6.3.d From an examination of written software development
+processes, and interviews of software developers, verify that:
+
+6.3.1 Custom application accounts, user IDs and/or passwords
+are removed before system goes into production or is released to
+customers.
+

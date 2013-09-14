@@ -1,0 +1,40 @@
+6.3.2.a Obtain and review policies to confirm that all custom
+application code changes must be reviewed (using either manual
+or automated processes) as follows:
+
+I Code changes are reviewed by individuals other than the
+originating code author, and by individuals who are
+knowledgeable in code review techniques and secure coding
+practices.
+
+I Code reviews ensure code is developed according to secure
+coding guidelines (see PCI DSS Requirement 6.5).
+
+I Appropriate corrections are implemented prior to release.
+
+I Code review results are reviewed and approved by
+management prior to release.
+
+6.3.2.b Select a sample of recent custom application changes and
+verify that custom application code is reviewed according to
+6.3.2.a, above.
+
+6.4 From an examination of change control processes, interviews
+with system and network administrators, and examination of
+relevant data (network configuration documentation, production and
+test data, etc.), verify the following:
+
+6.4.1 The development/test environments are separate from the
+production environment, with access control in place to enforce
+the separation.
+
+6.4.2 There is a separation of duties between personnel assigned
+to the development/test environments and those assigned to the
+production environment.
+
+6.4.3 Production data (live PANs) are not used for testing or
+development.
+
+6.4.4 Test data and accounts are removed before a production
+system becomes active.
+

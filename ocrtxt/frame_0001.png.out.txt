@@ -1,0 +1,28 @@
+UIIELIUPUIUUB IIIUIVIUUGIB LIEU §l:.‘|./blllly V
+provided security patches, which must i
+released, appropriate software patches
+software.
+
+ 
+
+6.1 Ensure that all system components
+and software are protected from known
+vulnerabilities by having the latest
+vendor-supplied security patches
+installed. Install critical security patches
+within one month of release.
+
+Note: An organization may consider
+applying a risk-based approach to
+
+prioritize their patch installations. For
+example, by prioritizing critical
+infrastructure (for example, public-facing
+devices and systems, databases) higher
+than less-critical internal devices, to
+ensure high-priority systems and devices
+are addressed within one month, and
+addressing less critical devices and
+
+ z
+

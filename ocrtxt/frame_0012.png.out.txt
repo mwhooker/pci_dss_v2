@@ -1,0 +1,29 @@
+6.6 For public-facing web applications, ensure that either one of the
+following methods are in place as follows:
+
+' Verify that public-facing web applications are reviewed (using
+either manual or automated vulnerability security assessment
+
+tools or methods), as follows:
+
+— At least annually
+
+— After any changes
+
+— By an organization that specializes in application security
+— That all vulnerabilities are corrected
+
+— That the application is re-evaluated after the corrections
+
+I Verify that a web-application firewall is in place in front of
+public-facing web applications to detect and prevent web-based
+attacks.
+
+N°te:—An organization that specializes in application
+
+securityll can be eithera thirdpany company or an
+
+internal organization, as long as the reviewers specialize
+
+in application security and can demonstrate independence from the
+

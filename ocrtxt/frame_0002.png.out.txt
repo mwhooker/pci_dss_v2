@@ -1,0 +1,15 @@
+ulneraonmes I0 gain PFIVIISQBG ECCBSS 10 systems. |V|ai‘ly UT IFISSE
+)e installed by the entities that manage the systems. All critical sy
+to protect against exploitation and compromise of cardholder dat
+
+ 
+
+6.1.a For a sample of system components and related software,
+compare the list of security patches installed on each system to the
+most recent vendor security patch list, to verify that current vendor
+patches are installed.
+
+6.1.b Examine policies related to security patch installation to verify
+they require installation of all critical new security patches within
+one month.
+

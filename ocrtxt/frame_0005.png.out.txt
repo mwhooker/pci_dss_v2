@@ -1,0 +1,40 @@
+6.3.2 Review of custom code prior to
+release to production or customers in
+order to identify any potential coding
+vulnerability.
+
+Note: This requirement for code
+reviews applies to all custom code
+
+(both internal and public-facing), as part
+of the system development life cycle.
+
+Code reviews can be conducted by
+knowledgeable internal personnel or
+third parties. Web applications are also
+subject to additional controls, if they are
+public facing, to address ongoing
+threats and vulnerabilities after
+implementation, as defined at PCI DSS
+
+Reguirement 6.6.
+6.4 Follow change control processes and
+procedures for all changes to system
+components. The processes must include
+the following:
+
+6.4.1 Separate development/test and
+production environments
+
+6.4.2 Separation of duties between
+development/test and production
+environments
+
+6.4.3 Production data (live PANs) are
+not used for testing or development
+
+6.4.4 Removal of test data and
+
+accounts before production systems
+become active
+

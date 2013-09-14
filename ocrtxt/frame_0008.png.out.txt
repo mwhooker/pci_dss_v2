@@ -1,0 +1,36 @@
+6.4.5.a Verify that change-control procedures related to
+implementing security patches and software modifications are
+documented and require items 6.4.5.1 — 6.4.5.4 below.
+
+6.4.5.b For a sample of system components and recent
+changes/security patches, trace those changes back to related
+change control documentation. For each change examined,
+perform the following:
+
+6.4.5.1 Verify that documentation of impact is included in the
+change control documentation for each sampled change.
+
+6.4.5.2 Verify that documented approval by authorized parties is
+present for each sampled change.
+
+6.4.5.3.a For each sampled change, verify that functionality
+testing is performed to verify that the change does not adversely
+impact the security of the system.
+
+6.4.5.3.b For custom code changes, verify that all updates are
+tested for compliance with PCI DSS Requirement 6.5 before being
+deployed into production.
+
+6.4.5.4 Verify that back-out procedures are prepared for each
+sampled change.
+
+6.5.a Obtain and review software development processes. Verify
+that processes require training in secure coding techniques for
+developers, based on industry best practices and guidance.
+
+6.5.b Interview a sample of developers and obtain evidence that
+they are knowledgeable in secure coding techniques.
+
+6.5.c. Verify that processes are in place to ensure that
+applications are not vulnerable to, at a minimum, the following:
+

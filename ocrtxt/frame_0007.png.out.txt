@@ -1,0 +1,35 @@
+6.4.5 Change control procedures for the
+implementation of security patches and
+software modifications. Procedures
+must include the following:
+
+6.4.5.1 Documentation of impact.
+
+6.4.5.2 Documented change approval
+by authorized parties.
+
+6.4.5.3 Functionality testing to verify
+that the change does not adversely
+impact the security of the system.
+
+6.4.5.4 Back-o ut procedures.
+
+6.5 Develop applications based on
+secure coding guidelines. Prevent
+common coding vulnerabilities in
+software development processes, to
+include the following:
+
+Note: The vulnerabilities listed at 6.5.1
+through 6.5.9 were current with industry
+
+best practices when this version of PCI
+DSS was published. However, as
+industry best practices for vulnerability
+management are updated (for example,
+the OWASP Guide, SANS CWE Top 25,
+CERT Secure Coding, etc.), the current
+best practices must be used for these
+
+reguirements.
+

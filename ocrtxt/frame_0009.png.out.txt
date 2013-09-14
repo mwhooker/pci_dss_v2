@@ -1,0 +1,32 @@
+6.5.1 Injection flaws, particularly SQL
+injection. Also consider OS Command
+Injection, LDAP and XPath injection
+flaws as well as other injection flaws.
+
+6.5.2 Buffer overflow
+
+6.5.3 Insecure cryptographic storage
+6.5.4 Insecure communications
+6.5.5 Improper error handling
+
+6.5.6 All —High|| vulnerabilities identified
+in the vulnerability identification process
+(as defined in PCI DSS Requirement
+6.2).
+
+Note: This requirement is considered a
+best practice until June 30, 2012, after
+
+which it becomes a reuirement
+
+ 
+
+6. 7 Cross-site scripting (XSS)
+
+6.5.8 Improper Access Control (such as
+insecure direct object references, failure
+to restrict URL access, and directory
+traversal)
+
+6.5.9 Cross-site request forgery (CSRF)
+
